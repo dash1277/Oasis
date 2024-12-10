@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS Hospital</title>
+
+    <!--font awesome cdn link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--css file link-->
+    <link rel="stylesheet" href="./Pharmacystyle.css">
+
+    <link rel="icon" href="./images/cardiology_8011424.png">
+
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+</head>
+<body>
+    <!--header section starts-->
+    <header class="header">
+        <a href="Index.html" class="logo"><i class="fas fa-heartbeat"></i>OASIS Hospital</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="Book.html">Book</a>
+            <a href="Pharmacy.html" class="active">Pharmacy</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    </header>
+    <!--header section ends-->
+
+    <!--home section starts-->
+    <section class="home" id="#">
+        <div class="image">
+            <img src="./images/Pharmacist.png" alt="Hospital family visit">
+        </div>
+
+        <div class="content">
+            <h3>Welcome to Our Hospital Pharmacy</h3>
+            <p>At OASIS Hospital, our pharmacy department plays a critical role in ensuring that you receive the highest quality of care throughout your hospital journey. Our dedicated team of pharmacists and pharmacy technicians are committed to providing expert medication management and personalized support to enhance your treatment experience.</p>
+            
+        </div>
+
+    </section>
+
+    <!--home section ends-->
+
+    <!--Cart icon-->
+    <div class="nav container">
+        <i class='bx bx-shopping-bag' id="cart-icon" data-quantitiy="0"></i>
+        <!--Cart-->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--content-->
+            <div class="cart-content"></div>
+
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!--Button-->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <button type="button" class="btn-add" id="add-favourites">Add to favourites</button>
+            <button type="button" class="btn-apply" id="apply-favourites">Apply favourites</button>
+
+            <!--close cart-->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </div>
+
+    <!--Product-->
+    <section class="med container">
+        <h2 class="section-title">analgesics</h2>
+        <div class="med-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="./images/Aspirin.jpg" alt="Aspirin" class="product-img">
+                <h2 class="product-title">Aspirin</h2>
+                <span class="price">$5.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="./images/ibuprofen.jpg" alt="Ibuprofen" class="product-img">
+                <h2 class="product-title">Ibuprofen</h2>
+                <span class="price">$6.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="./images/paracetamol.jpg" alt="Paracetamol" class="product-img">
+                <h2 class="product-title">Paracetamol</h2>
+                <span class="price">$4.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="./images/Naproxen.jpg" alt="Naproxen" class="product-img">
+                <h2 class="product-title">Naproxen</h2>
+                <span class="price">$7.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="./images/Diclofenac.jpg" alt="Diclofenac" class="product-img">
+                <h2 class="product-title">Diclofenac</h2>
+                <span class="price">$8.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 6-->
+            <div class="product-box">
+                <img src="./images/Codeine.jpg" alt="Codeine" class="product-img">
+                <h2 class="product-title">Codeine</h2>
+                <span class="price">$9.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Product 2-->
+    <section class="med container">
+        <h2 class="section-title">antibiotics</h2>
+        <div class="med-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="./images/amoxicillin.jpg" alt="Amoxicillin" class="product-img">
+                <h2 class="product-title">Amoxicillin</h2>
+                <span class="price">$12.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="./images/Azithromycin.jpg" alt="Azithromycin" class="product-img">
+                <h2 class="product-title">Azithromycin</h2>
+                <span class="price">$15.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="./images/Ciprofloxacin.jpg" alt="Ciprofloxacin" class="product-img">
+                <h2 class="product-title">Ciprofloxacin</h2>
+                <span class="price">$14.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="./images/Doxycycline.jpg" alt="Doxycycline" class="product-img">
+                <h2 class="product-title">Doxycycline</h2>
+                <span class="price">$13.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="./images/Penicillin.jpg" alt="Penicillin" class="product-img">
+                <h2 class="product-title">Penicillin</h2>
+                <span class="price">$11.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 6-->
+            <div class="product-box">
+                <img src="./images/Tetracycline.jpg" alt="Tetracycline" class="product-img">
+                <h2 class="product-title">Tetracycline</h2>
+                <span class="price">$16.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Product 3-->
+    <section class="med container">
+        <h2 class="section-title">antidepressants</h2>
+        <div class="med-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="./images/Fluoxetine.jpg" alt="Fluoxetine" class="product-img">
+                <h2 class="product-title">Fluoxetine</h2>
+                <span class="price">$19.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="./images/Sertraline.jpg" alt="Sertraline" class="product-img">
+                <h2 class="product-title">Sertraline</h2>
+                <span class="price">$21.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="./images/Citalopram.jpg" alt="Citalopram" class="product-img">
+                <h2 class="product-title">Citalopram</h2>
+                <span class="price">$18.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="./images/Paroxetine.jpg" alt="Paroxetine" class="product-img">
+                <h2 class="product-title">Paroxetine</h2>
+                <span class="price">$20.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="./images/Escitalopram.jpg" alt="Escitalopram" class="product-img">
+                <h2 class="product-title">Escitalopram</h2>
+                <span class="price">$22.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 6-->
+            <div class="product-box">
+                <img src="./images/Venlafaxine.jpg" alt="Venlafaxine" class="product-img">
+                <h2 class="product-title">Venlafaxine</h2>
+                <span class="price">$23.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Product 4-->
+    <section class="med container">
+        <h2 class="section-title">antihistamines</h2>
+        <div class="med-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="./images/cetirizine.jpg" alt="Cetirizine" class="product-img">
+                <h2 class="product-title">Cetirizine</h2>
+                <span class="price">$8.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="./images/Loratadine.jpg" alt="Loratadine" class="product-img">
+                <h2 class="product-title">Loratadine</h2>
+                <span class="price">$9.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="./images/Fexofenadine.jpg" alt="Fexofenadine" class="product-img">
+                <h2 class="product-title">Fexofenadine</h2>
+                <span class="price">$10.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="./images/Diphenhydramine.jpg" alt="Diphenhydramine" class="product-img">
+                <h2 class="product-title">Diphenhydramine</h2>
+                <span class="price">$7.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Product 5-->
+    <section class="med container">
+        <h2 class="section-title">antihypertensives</h2>
+        <div class="med-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="./images/Amlodipine.jpg" alt="Amlodipine" class="product-img">
+                <h2 class="product-title">Amlodipine</h2>
+                <span class="price">$16.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="./images/Lisinopril.jpg" alt="Lisinopril" class="product-img">
+                <h2 class="product-title">Lisinopril</h2>
+                <span class="price">$17.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="./images/Losartan.jpg" alt="Losartan" class="product-img">
+                <h2 class="product-title">Losartan</h2>
+                <span class="price">$18.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="./images/Metoprolol.jpg" alt="Metoprolol" class="product-img">
+                <h2 class="product-title">Metoprolol</h2>
+                <span class="price">$15.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="./images/Ramipril.jpg" alt="Ramipril" class="product-img">
+                <h2 class="product-title">Ramipril</h2>
+                <span class="price">$19.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!--Box 6-->
+            <div class="product-box">
+                <img src="./images/Valsartan.jpg" alt="Valsartan" class="product-img">
+                <h2 class="product-title">Valsartan</h2>
+                <span class="price">$20.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--Link To Js-->
+    <script src="./main.js"></script>
+</body>
+</html>

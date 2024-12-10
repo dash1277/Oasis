@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth; 
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.header .logo i{
+    color: green;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: green;
+    margin-left: 2rem;
+}
+
+ .navbar a :hover{
+    color:darkgreen;
+}
+
+.navbar a.active, .navbar a:hover {
+    border-bottom: 2px solid darkgreen;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: green;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: black;
+    
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:black;
+    padding: 1rem 0;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: black;
+    font-size: 5rem;
+}
+
+.heading span{
+    color: green;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+#cart-icon {
+    position: relative;
+    font-size: 3rem;
+    cursor: pointer;
+    color: green;
+    margin-left:100rem;
+}
+
+#cart-icon[data-quantity="0"]::after{
+    contain: '';
+}
+
+#cart-icon[data-quantity]::after{
+    content: attr(data-quantity);
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 380px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid green ;
+    box-shadow: -2px 0 2px hsl(0, 4%, 15% / 10%);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1000;
+}
+
+.cart.active{
+    right: 0;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cart-title {
+    font-size: 23px;
+    margin-top:2rem ;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid green;
+}
+
+.total-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: green;
+}
+
+.total-price{
+    font-size: 1.7rem;
+    margin: 1rem 0 0 0.7rem;
+    color: green;
+    font-weight: 1000;
+}
+
+.btn-buy, .btn-add, .btn-apply{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.btn-buy{
+    background-color:green;
+}
+
+.btn-add{
+    background-color: orange;
+}
+.btn-apply{
+    background-color: blue;
+}
+
+.btn-buy:hover, .btn-add:hover, .btn-apply:hover {
+    opacity: 0.8;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 3rem;
+    color: green;
+    cursor: pointer;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.cart-quantity{
+    border: 1px solid green;
+    outline-color: black;
+    width: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.med{
+    margin-top: 2rem;
+}
+
+.med-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-box{
+    position:relative;
+    border: 3px solid green;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-height: 200px;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-box img {
+    max-width: 100%;
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.product-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: green;
+}
+
+.add-cart{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color: hsl(249, 32%, 17%);
+}
+
+
+/* Media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: 1px solid green; 
+        width: 30rem;
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out; 
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+
+    .home .content {
+        max-width: 90%; 
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .nav{
+        padding: 14px 0;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .med{
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 400px){
+    .nav{
+        padding: 12px 0;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px){
+    
+    .med{
+        margin-top: 1rem !important;
+    }
+    .cart{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .home {
+        flex-direction: column; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    .home .image {
+        margin-bottom: 20px; 
+    }
+
+    .home .content h3 {
+        font-size: 24px; 
+    }
+
+    .home .content p {
+        font-size: 14px; 
+    }
+
+    .home .image img {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
