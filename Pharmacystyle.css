@@ -146,7 +146,7 @@ section{
 }
 
 #cart-icon[data-quantity="0"]::after{
-    contain: 'No Items';
+    content: 'No Items';
     contain: content;
 }
 
