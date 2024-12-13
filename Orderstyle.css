@@ -9,7 +9,7 @@ body{
 header{
     text-align: center;
     padding: 20px;
-    background: green;
+    background: #4CAF50;
     color: white;
 }
 
@@ -27,7 +27,7 @@ h2{
 }
 
 p{
-    color: #218838;
+    color: #4CAF50;
     font-weight: 1000;
 }
 
