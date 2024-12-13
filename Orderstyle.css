@@ -70,70 +70,45 @@ li{
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
+    body {
+        padding: 10px;
     }
 
-    .order-summary {
+    .order-summary, #payment-form {
         padding: 15px;
     }
 
-    .order-summary h2 {
-        font-size: 20px;
+    header {
+        font-size: 1.2rem;
+        padding: 10px;
     }
 
-    form {
-        padding: 15px;
+    input, textarea {
+        font-size: 1rem;
     }
 
-    form h2 {
-        font-size: 20px;
-    }
-
-    form label {
-        font-size: 14px;
-    }
-
-    form input,
-    form textarea {
-        font-size: 14px;
-    }
-
-    form button {
-        padding: 12px;
-        font-size: 16px;
+    button {
+        font-size: 0.9rem;
+        width: 100%;
     }
 }
 
-
-@media (max-width: 425px) {
-    header h1 {
-        font-size: 20px;
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 8px;
     }
 
-    .order-summary {
-        padding: 10px;
+    .order-summary h2, #payment-form h2 {
+        font-size: 1.2rem;
     }
 
-    .order-summary h2 {
-        font-size: 18px;
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
-    form {
-        padding: 10px;
-    }
-
-    form h2 {
-        font-size: 18px;
-    }
-
-    form input,
-    form textarea {
-        font-size: 12px;
-    }
-
-    form button {
-        padding: 10px;
-        font-size: 14px;
+    button {
+        font-size: 0.8rem;
     }
 }

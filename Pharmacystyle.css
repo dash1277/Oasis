@@ -265,4 +265,83 @@ button:focus {
 }
 
 
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: 1px solid green; 
+        width: 30rem;
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out; 
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .med-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-box {
+        width: 90%;
+    }
+
+    .summary-table th, .summary-table td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .product-box {
+        width: 100%;
+    }
+
+    .btn-add, .btn-apply, .btn-buy {
+        width: 90%;
+        text-align: center;
+    }
+}
+
 
